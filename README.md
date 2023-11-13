@@ -11,75 +11,94 @@ Below is how the target architecture will look like
 ## Step 1: 
 Go to Azure DevOps organization and create a new project
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/0a4129bd-4ccc-42cd-9cbd-86ab3d364f67)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/7dcdc08a-b857-40b6-9219-51747c87e441)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/d0499add-96ed-434a-9a6e-f8debf1ca81c)
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/8e714bcb-e482-4b9e-a5db-b0b45811dd81)
+
 
 ## Step 2: 
 Next, we push existing project code on the local machine to Azure Repos by firstly, right clicking on the project folder on the local machine and selecting Git Bash and then running the following git commands below
 
 ```
-```git init```
-```git add .```
-```git commit -m "file added"```
-```git push <azure_repo_url>```
+git init
+git add .
+git commit -m "file added"
+git push <azure_repo_url>
 ```
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/6b7240d9-6003-404e-a19d-b83a9eb9e1da)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ee22d1b1-9b09-4b6c-993f-d59d3219b514)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/637acedf-8943-45ef-9d0a-f3654f228ca6)
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/724e3a2b-b4f5-489c-adb3-659c068b8e8f)
+
 
 The application code will now be see in Azure Repos
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/a1e8f1f2-8822-4b70-96ad-3cdb500a8bfb)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/c77bde30-38cd-43db-9def-3d14a92ee541)
+
 
 ## Step 3: 
 We create a new pipeline for the continuous integration
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/aea863ed-9f1a-4477-9c64-0503e1aedbed)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/28f1b2c6-04d4-4af7-ae74-d65cbef5859a)
+
 
 ## Step 4: 
 Next, we select the source where our project code resides (here Azure Repos), the project and the repository
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/16df0d68-5923-4b71-ae77-613dfc48a4d3)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ead0b523-ca35-4207-a719-b1d2687081ea)
+
 
 ## Step 5: 
 As our test project is Java based, we need to install the build automation tool primarily for Java projects which is Maven
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/50c9004e-193b-4a6c-bbcb-743ebed17826)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/93148353-15bf-499f-b319-337e52028f22)
+
 
 ## Step 6: 
 On the pipeline section, we choose the pipeline agent. The agent is the machine where the build is performed. It is the agent that runs the tasks and jobs defined in the pipeline. They can be WIndows-based or Linux-based machines. We have Microsoft hosted agents and self hosted agents. In this project, we will use Microsoft hosted agent which comes pre-configured and they are maintained and updated by Microsoft. Leave other settings as default, then click Save and Run
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/547ad7dd-2d76-4853-b10d-0a5c3ab7fc8d)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/0abcb958-cd16-4a94-997b-74be9c84d6f4)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/c6503df8-e6b4-40e8-bb9b-9ef4c76b541a)
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/b0a76656-994e-48f4-88fb-41ac5c6ea49f)
+
 
 ## Step 7: 
 The build process will start, at completion, an artifact will be generated to be used for Continuous Deployment pipeline
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/fcebf581-9bbc-49bc-9567-f10e78b6829f)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/43cd396f-266e-413c-af74-cf3f7a83daea)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/dc820b1b-b0c3-4071-be31-0fd38495b7c3)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/254ccedf-7b58-428b-a010-0b819938ed99)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/666f50d6-4428-4079-93b9-aac81983bc2f)
+
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/8c8a2616-c30a-493c-ad48-f17b5bbe6f63)
+
 
 ## Step 8: 
 We go to the pipeline section, click on the edit button, then on the Triggers tab, we select Enable Continuous Integration. This will ensure that whenever we make changes to the application code locally and push the code to the repository, a build will be triggered.
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/982b344d-45dc-438a-af17-f4a8026b428c)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/21b15166-028b-49bb-bdde-261e2fed250e)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/e3d5a90c-a5c2-4062-9679-803e61a3e581)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/52afc7e7-d332-4c43-8112-d69a75f20f4d)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/f2e3e7ce-e6d6-4db9-96bc-35f9af65e411)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/395deb7b-ba04-4ecf-8edf-e8ffd19a1f76)
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/aced5202-96a6-42e9-80c4-d25e2ac04c1c)
+
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/e83cb19b-6839-48fd-b7aa-284eb6dcace3)
+
 
 ## Step 9: 
 We can observe the job running till completion and an artifact is then generated.
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/a6181bae-a496-4e6b-b6c6-2ae71cfdce8a)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/d096f0d9-1b64-4200-af77-6c47bff66adc)
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/f937ce25-89b3-44aa-bd8e-3bc439430516)
+
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/2f833551-f57b-4bce-b68c-8b62c9b8680f)
+
 
 ## Step 10: For the Continuous Delivery pipeline:
 Here, we are deploying to Azure App Service Web App. To do this, we will first create a service connection to authenticate to the Azure subscription on Azure DevOps. For the service connection authentication, a service principal was used. 
