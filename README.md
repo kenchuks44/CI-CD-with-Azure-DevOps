@@ -26,8 +26,6 @@ git add .
 git commit -m "file added"
 git push <azure_repo_url>
 ```
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ee22d1b1-9b09-4b6c-993f-d59d3219b514)
-
 
 ![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/724e3a2b-b4f5-489c-adb3-659c068b8e8f)
 
