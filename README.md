@@ -5,7 +5,8 @@ The steps to accomplish this will involve moving our application code from the l
 
 Below is how the target architecture will look like
 
-![Image](https://github.com/users/kenchuks44/projects/4/assets/88329191/9faa1e74-baed-487b-ba90-7f2716e4cc5b)
+![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/9e9080b0-d9d8-4060-a174-33735c427b39)
+
 
 ## Step 1: 
 Go to Azure DevOps organization and create a new project
