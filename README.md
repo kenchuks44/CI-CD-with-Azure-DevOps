@@ -110,73 +110,89 @@ Here, we are deploying to Azure App Service Web App. To do this, we will first c
 
 ![Screenshot (69)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/c1ce0be5-bfaf-47a9-9f52-063f9d650f98)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/f4bab06c-0c85-40f5-bd23-ff7bee1def0a)
+![Screenshot (63)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/b167bfa5-3bda-422f-a72f-97be61668be6)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/d3921f62-0be6-4f10-ba1d-edb16c0153df)
 
 Then, on the Azure portal, through the Microsoft Entra ID, we registered the application (take note of the app ID). Next, we created a client secret (copied and kept in a safe location). Next, we grant permissions to the service principal to read information on the Azure subscription. To achieve this, we create a reader role assignment and assign it to the service principal.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/5ba9daae-dd8b-4fd7-9851-42063792c25d)
+![Screenshot (70)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/5f573b4e-b9fe-4d19-9388-74ecb6c72f8a)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/9b2a676c-11e5-4ac1-8dad-3bfc1b70bcee)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/be934b46-d315-41d7-94b8-18e28bd93399)
+![Screenshot (72)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/2c1c0142-c307-4db3-9324-6e92bb2b85d6)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/a5aa97a9-8b45-449f-aed7-3ad413072587)
+
+![Screenshot (73)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/3c83fed8-774e-4cab-9f97-78822fcc582b)
+
 
 Then, finally setup the service connection
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/a64651d2-fcdb-4594-869b-01583ae2ce02)
+![Screenshot (74)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/23a6b99c-945b-48c1-9f87-6ade67f04fee)
+
 
 ## Step 11: 
 Creating a release pipeline: A release pipeline enables us to automate the deployment and delivery of the java maven app to various stages and environments such as Development, QA and Production environments.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/070fbada-4b1e-4aea-8d22-a4d16d144b06)
+![Screenshot (75)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ccb3e36b-4d31-4838-bb8e-e815ddd691fc)
+
 
 On creating the release pipeline, we select Azure App Service deployment as we are deploying the app to Azure Web App. Next, we select build and the source of our build is the artifact previously generated.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/993d22d5-a92c-40ea-a188-d75ae9b394ae)
+![Screenshot (76)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/58d6ac58-3bad-4699-ae88-186a8f39927e)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/94ff6d79-5f3c-4c9a-a384-b6cfde0bdbbf)
+
+![Screenshot (77)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/db11bcaf-cb3c-43b0-aead-e8993957dc4d)
+
 
 Next, we add a stage to the pipeline, define the build job to be executed and then manually trigger the pipeline using Microsoft hosted agent.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/73c6cc2f-428f-471b-a6b2-c883c479b68c)
+![Screenshot (78)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/d3387dac-a00e-40f0-a9dd-d82eb1de0d48)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ecd42ad8-68f5-40bd-802a-135a2a2e1845)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/e1bbe9a9-5e8f-4707-8bcb-23f2b602999f)
+![Screenshot (79)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/23adf639-6d0f-4ecb-a711-5b4a06888c8c)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/43a5fd8a-3449-4736-a318-cb429b9fc5b6)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/dc2e1925-d77a-4f07-af5f-0d7fe17ecd0f)
+![Screenshot (82)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/b5ef6762-690f-43f9-b107-eef578baa940)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/73bc8f70-3bf9-475a-8ea9-f3871ab7fa51)
+
+![Screenshot (80)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/387adee3-f5db-4043-8950-6d6214b26e3b)
+
+
+![Screenshot (81)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/37de18b8-c0bc-4833-be79-53ab79811f3f)
+
+
+![Screenshot (88)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/6e2cc244-e3c9-4da8-bd80-5ac71d5a3d14)
+
 
 Once completed, go to the Azure Web App on the Azure portal and click on the domain URL and the website will be displayed in the browser.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/cc3c5f4a-45bd-494c-a4ce-43addbc426e5)
+![Screenshot (92)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/36beaa4d-b6e0-42ba-9eb3-1534a3784338)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/5fe7357f-53f5-4c01-94c4-e23f47ec670a)
 
 ## Step 12: 
 Continuous deployment/delivery: To standardize and streamline our release pipeline, we will enable continuous deployment to increase efficiency and minimize the possibilities of human error. Also, for stages like production, it is often recommended to enable a manual trigger with a pre-deployment condition to ensure the right individuals deploys to that environment.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/493f66dd-ea64-4f08-b851-7ba7cb428e82)
+![Screenshot (90)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/2b40003d-9d39-4788-a4fa-6e8ad5a930c7)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/358ad467-58ae-4311-a642-df7f5a529ef0)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/1d0113ea-369f-44eb-8a21-11b6bda8d20f)
+![Screenshot (89)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/b89f673f-ad2d-498f-a14f-d6bbcad47994)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/4bbaafc3-8b34-4af4-9c4c-f06f83e4e1b1)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/0e490bec-278e-4619-ae86-c690d4255e82)
+![Screenshot (94)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/3985d6c6-c4ef-4121-a627-7239d211ae1e)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/3bf5becd-51d7-4882-8384-93b4c8133a8a)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/ff7de415-7f20-4af4-8421-24541c079415)
+![Screenshot (95)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/907cc1c7-813a-46a2-a145-879610cea34f)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/586aad1a-535c-407d-9417-25350c727534)
+
+![Screenshot (93)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/16dba4e7-bec8-4245-b0c1-92f6bc13bb73)
+
+
+![Screenshot (91)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/0ad4f5a5-970f-4df5-a218-82c244699f46)
+
+
+![Screenshot (134)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/691fb8f4-f961-4dc3-87dd-c4251a8aca9e)
+
+
+
 
 
 
