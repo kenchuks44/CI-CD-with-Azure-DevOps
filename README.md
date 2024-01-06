@@ -77,25 +77,30 @@ The build process will start, at completion, an artifact will be generated to be
 ## Step 8: 
 We go to the pipeline section, click on the edit button, then on the Triggers tab, we select Enable Continuous Integration. This will ensure that whenever we make changes to the application code locally and push the code to the repository, a build will be triggered.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/21b15166-028b-49bb-bdde-261e2fed250e)
+![Screenshot (54)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/a1e30df3-8f89-43ca-80e6-34faa9a5c874)
 
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/f2e3e7ce-e6d6-4db9-96bc-35f9af65e411)
+
+![Screenshot (55)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/708b3dc0-ff58-406b-8f89-7eae1ffb0a01)
+
 
 
 ![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/aced5202-96a6-42e9-80c4-d25e2ac04c1c)
 
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/e83cb19b-6839-48fd-b7aa-284eb6dcace3)
+![Screenshot (59)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/3299caa0-ad07-41b8-b41e-07b40fd6d33b)
+
 
 
 ## Step 9: 
 We can observe the job running till completion and an artifact is then generated.
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/d096f0d9-1b64-4200-af77-6c47bff66adc)
+![Screenshot (60)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/f9d33c5e-0639-47cc-9dc1-34441cb874d1)
 
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/2f833551-f57b-4bce-b68c-8b62c9b8680f)
+
+![Screenshot (61)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/e16ecba8-015f-4529-a906-60c396f251e4)
+
 
 
 ## Step 10: For the Continuous Delivery pipeline:
