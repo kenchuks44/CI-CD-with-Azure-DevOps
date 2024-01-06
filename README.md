@@ -106,11 +106,9 @@ We can observe the job running till completion and an artifact is then generated
 ## Step 10: For the Continuous Delivery pipeline:
 Here, we are deploying to Azure App Service Web App. To do this, we will first create a service connection to authenticate to the Azure subscription on Azure DevOps. For the service connection authentication, a service principal was used. 
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/c743f6a1-8412-4638-8311-0b479cd38cf5)
+![Screenshot (67)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/757ed17f-59a4-4d56-9acc-4e10e63e5e45)
 
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/24bfd32f-8dd3-4cbb-9347-e32dfae99712)
-
-![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/dc71ffe3-9602-4ff4-8407-9f441b922f38)
+![Screenshot (69)](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/c1ce0be5-bfaf-47a9-9f52-063f9d650f98)
 
 ![image](https://github.com/kenchuks44/CI-CD-with-Azure-DevOps/assets/88329191/f4bab06c-0c85-40f5-bd23-ff7bee1def0a)
 
