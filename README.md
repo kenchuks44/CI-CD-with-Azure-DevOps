@@ -1,5 +1,5 @@
 # CI-CD-with-Azure-DevOps
-Creating this project to show how to create a Continuous Integration and Continuous Deployment pipeline using Azure DevOps to automate the delivery process of a Java Maven Application
+Creating this project to show how to setup a Continuous Integration and Continuous Deployment pipeline using Azure DevOps to automate the delivery process of a Java Maven Application
 
 The steps to accomplish this will involve moving our application code from the local dev environment ( such as VS Code or IntelliJ) to Azure Repos. Next, we will create a CI pipeline and generate artifacts to be used for the CD pipeline. Subsequently, we will publish the artifact in different environments such as Azure App Service with approval conditions implemented for illustration.
 
